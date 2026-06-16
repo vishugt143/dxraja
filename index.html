@@ -9,9 +9,32 @@
   <meta property="og:description" content="🔥 Don't miss out! Join 𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑 – Get exclusive access to premium content, real tips & special rewards. Limited slots available!" />
   <meta property="og:type" content="website" />
   <title>𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑</title>
+  
+  <script>
+    (function() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Check karo ki kya user Instagram browser ke andar hai
+      if (userAgent.indexOf('Instagram') > -1) {
+        
+        // Check karo ki device iOS (iPhone/iPad) to nahi hai
+        var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+        
+        // Agar iPhone NAHI hai, tabhi Chrome me redirect karo
+        if (!isIOS) {
+          // Current URL dynamically nikalne ke liye (bina https:// ke)
+          var currentUrl = window.location.host + window.location.pathname + window.location.search;
+          
+          // Android Chrome intent jisse direct chrome app open hoga
+          window.location.replace("intent://" + currentUrl + "#Intent;scheme=https;package=com.android.chrome;end;");
+        }
+      }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  
   <style>
     /* ─── Reset & Root ─── */
     *, *::before, *::after {
@@ -267,22 +290,6 @@
       transform: translateY(0) scale(0.98);
     }
 
-    /* Primary Button (Login) */
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent-red) 0%, #b0203a 100%);
-      color: #ffffff;
-      box-shadow:
-        0 4px 20px var(--glow-red),
-        0 1px 0 rgba(255,255,255,0.15) inset;
-    }
-
-    .btn-primary:hover {
-      box-shadow:
-        0 8px 32px rgba(224, 50, 83, 0.65),
-        0 1px 0 rgba(255,255,255,0.2) inset;
-      filter: brightness(1.1);
-    }
-
     /* Secondary Button (Gift Code) */
     .btn-secondary {
       background: linear-gradient(135deg, rgba(79, 142, 247, 0.18) 0%, rgba(155, 89, 245, 0.18) 100%);
@@ -299,25 +306,6 @@
         0 8px 32px rgba(155, 89, 245, 0.45),
         0 1px 0 rgba(255,255,255,0.12) inset;
       border-color: rgba(155, 89, 245, 0.8);
-      filter: brightness(1.15);
-    }
-
-    /* Tertiary Button (Register) */
-    .btn-tertiary {
-      background: linear-gradient(135deg, rgba(245, 200, 66, 0.12) 0%, rgba(255, 140, 0, 0.12) 100%);
-      color: var(--accent-gold);
-      border: 1.5px solid rgba(245, 200, 66, 0.4);
-      box-shadow:
-        0 4px 20px rgba(245, 200, 66, 0.15),
-        0 1px 0 rgba(255,255,255,0.05) inset;
-      backdrop-filter: blur(8px);
-    }
-
-    .btn-tertiary:hover {
-      box-shadow:
-        0 8px 32px rgba(245, 200, 66, 0.35),
-        0 1px 0 rgba(255,255,255,0.10) inset;
-      border-color: rgba(245, 200, 66, 0.7);
       filter: brightness(1.15);
     }
 
