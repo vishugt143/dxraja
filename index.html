@@ -10,27 +10,6 @@
   <meta property="og:type" content="website" />
   <title>𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑</title>
   
-  <script>
-    (function() {
-      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // Check karo ki kya user Instagram browser ke andar hai
-      if (userAgent.indexOf('Instagram') > -1) {
-        
-        // Check karo ki device iOS (iPhone/iPad) to nahi hai
-        var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
-        
-        // Agar iPhone NAHI hai, tabhi Chrome me redirect karo
-        if (!isIOS) {
-          // Current URL dynamically nikalne ke liye (bina https:// ke)
-          var currentUrl = window.location.host + window.location.pathname + window.location.search;
-          
-          // Android Chrome intent jisse direct chrome app open hoga
-          window.location.replace("intent://" + currentUrl + "#Intent;scheme=https;package=com.android.chrome;end;");
-        }
-      }
-    })();
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -475,6 +454,26 @@
       .stat-value  { font-size: 1.2rem; }
     }
   </style>
+
+  <script>
+    function forceChromeOnClick(event, targetUrl) {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      var isInstagram = userAgent.indexOf('Instagram') > -1;
+      var isAndroid = /android/i.test(userAgent);
+      
+      // Agar user Insta me hai aur Android device hai
+      if (isInstagram && isAndroid) {
+        event.preventDefault(); // Insta ka default tab khulne se roko
+        
+        // Link se 'https://' hata ke intent format me daalo
+        var cleanUrl = targetUrl.replace(/^https?:\/\//, '');
+        
+        // Chrome browser force open karo
+        window.location.href = "intent://" + cleanUrl + "#Intent;scheme=https;package=com.android.chrome;end;";
+      }
+      // Agar iPhone hai, toh code kuch nahi karega aur target="_blank" normally work karega
+    }
+  </script>
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -533,6 +532,7 @@
         rel="noopener noreferrer"
         class="btn btn-secondary"
         aria-label="Arnold Gift Code"
+        onclick="forceChromeOnClick(event, 'https://slexzone.study/index.php?key=GODxMOD')"
       >
         <span class="btn-icon">GET PANEL NOW </span>
       </a>
