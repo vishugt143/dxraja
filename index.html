@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join 𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑 – Exclusive VIP channel with premium tips, real deals, and daily rewards. Click to join now!" />
+  <meta name="keywords" content="arnold real vip, vip channel, telegram vip, real vip tips, premium channel, join telegram, vip group" />
+  <meta property="og:title" content="𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑 – Join the VIP Channel" />
+  <meta property="og:description" content="🔥 Don't miss out! Join 𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑 – Get exclusive access to premium content, real tips & special rewards. Limited slots available!" />
+  <meta property="og:type" content="website" />
+  <title>𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Root ─── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-dark:       #07080f;
+      --bg-card:       rgba(255, 255, 255, 0.04);
+      --accent-red:    #e03253;
+      --accent-red-2:  #c01e3e;
+      --accent-pink:   #ff4d72;
+      --accent-gold:   #f5c842;
+      --accent-blue:   #4f8ef7;
+      --accent-purple: #9b59f5;
+      --text-primary:  #ffffff;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --text-muted:    rgba(255, 255, 255, 0.35);
+      --glow-red:      rgba(224, 50, 83, 0.45);
+      --glow-purple:   rgba(155, 89, 245, 0.3);
+      --radius-btn:    16px;
+      --radius-card:   24px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Outfit', 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ─── Animated Background ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%,   rgba(155, 89, 245, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 35% at 20% 80%,  rgba(224, 50, 83, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 60%,  rgba(79, 142, 247, 0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Floating Orbs ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+      animation: floatOrb 8s ease-in-out infinite alternate;
+    }
+    .orb-1 {
+      width: 320px; height: 320px;
+      background: var(--accent-purple);
+      top: -80px; left: -80px;
+      animation-delay: 0s;
+    }
+    .orb-2 {
+      width: 260px; height: 260px;
+      background: var(--accent-red);
+      bottom: -60px; right: -60px;
+      animation-delay: -3s;
+    }
+    .orb-3 {
+      width: 200px; height: 200px;
+      background: var(--accent-blue);
+      top: 50%; right: -40px;
+      animation-delay: -6s;
+    }
+
+    @keyframes floatOrb {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(20px, 30px) scale(1.08); }
+    }
+
+    /* ─── Particle Stars ─── */
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      animation: twinkle var(--dur, 3s) ease-in-out infinite alternate;
+      animation-delay: var(--delay, 0s);
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.1; transform: scale(0.6); }
+      to   { opacity: 0.9; transform: scale(1.2); }
+    }
+
+    /* ─── Main Container ─── */
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 32px 20px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* ─── Logo Area ─── */
+    .logo-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      animation: fadeSlideDown 0.7s ease both;
+    }
+
+    .logo-glow {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(155, 89, 245, 0.35) 0%, transparent 70%);
+      pointer-events: none;
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1);    opacity: 0.8; }
+      50%       { transform: scale(1.15); opacity: 1; }
+    }
+
+    .logo-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 0 24px rgba(155, 89, 245, 0.6)) drop-shadow(0 0 48px rgba(79, 142, 247, 0.3));
+      animation: logoFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+
+    /* ─── Brand Text ─── */
+    .brand {
+      text-align: center;
+      margin-bottom: 36px;
+      animation: fadeSlideUp 0.8s 0.2s ease both;
+    }
+
+    .brand-title {
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ffffff 0%, #d8bfff 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      margin-bottom: 8px;
+    }
+
+    .brand-tagline {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── Divider ─── */
+    .divider {
+      width: 60px;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-red), var(--accent-blue));
+      margin: 0 auto 36px;
+      animation: fadeSlideUp 0.8s 0.3s ease both;
+    }
+
+    /* ─── Buttons ─── */
+    .buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      animation: fadeSlideUp 0.9s 0.4s ease both;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 18px 24px;
+      border: none;
+      border-radius: var(--radius-btn);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+      position: relative;
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+      border-radius: var(--radius-btn);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover::before { opacity: 1; }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    /* Primary Button (Login) */
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-red) 0%, #b0203a 100%);
+      color: #ffffff;
+      box-shadow:
+        0 4px 20px var(--glow-red),
+        0 1px 0 rgba(255,255,255,0.15) inset;
+    }
+
+    .btn-primary:hover {
+      box-shadow:
+        0 8px 32px rgba(224, 50, 83, 0.65),
+        0 1px 0 rgba(255,255,255,0.2) inset;
+      filter: brightness(1.1);
+    }
+
+    /* Secondary Button (Gift Code) */
+    .btn-secondary {
+      background: linear-gradient(135deg, rgba(79, 142, 247, 0.18) 0%, rgba(155, 89, 245, 0.18) 100%);
+      color: #ffffff;
+      border: 1.5px solid rgba(155, 89, 245, 0.5);
+      box-shadow:
+        0 4px 20px rgba(155, 89, 245, 0.2),
+        0 1px 0 rgba(255,255,255,0.08) inset;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-secondary:hover {
+      box-shadow:
+        0 8px 32px rgba(155, 89, 245, 0.45),
+        0 1px 0 rgba(255,255,255,0.12) inset;
+      border-color: rgba(155, 89, 245, 0.8);
+      filter: brightness(1.15);
+    }
+
+    /* Tertiary Button (Register) */
+    .btn-tertiary {
+      background: linear-gradient(135deg, rgba(245, 200, 66, 0.12) 0%, rgba(255, 140, 0, 0.12) 100%);
+      color: var(--accent-gold);
+      border: 1.5px solid rgba(245, 200, 66, 0.4);
+      box-shadow:
+        0 4px 20px rgba(245, 200, 66, 0.15),
+        0 1px 0 rgba(255,255,255,0.05) inset;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-tertiary:hover {
+      box-shadow:
+        0 8px 32px rgba(245, 200, 66, 0.35),
+        0 1px 0 rgba(255,255,255,0.10) inset;
+      border-color: rgba(245, 200, 66, 0.7);
+      filter: brightness(1.15);
+    }
+
+    /* Button Icon */
+    .btn-icon {
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .timer-card {
+      width: 100%;
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: var(--radius-card);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(155, 89, 245, 0.12) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.18),
+        0 1px 0 rgba(255, 255, 255, 0.08) inset;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      animation: fadeSlideUp 1s 0.5s ease both;
+    }
+
+    .timer-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+
+    .timer-display {
+      display: block;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      text-shadow: 0 0 18px rgba(224, 50, 83, 0.3);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timer-note {
+      margin-top: 8px;
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.03em;
+    }
+
+    .timer-card.expired .timer-display {
+      color: var(--accent-pink);
+    }
+
+    /* ─── Stats Row ─── */
+    .stats {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 40px;
+      animation: fadeSlideUp 1s 0.6s ease both;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.4rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .stat-sep {
+      width: 1px;
+      background: rgba(255,255,255,0.1);
+      align-self: stretch;
+      margin: 4px 0;
+    }
+
+    /* ─── Footer ─── */
+    .footer {
+      margin-top: 44px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      text-align: center;
+      animation: fadeSlideUp 1s 0.8s ease both;
+    }
+
+    .footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover {
+      color: var(--accent-pink);
+    }
+
+    /* ─── Live Badge ─── */
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(224, 50, 83, 0.15);
+      border: 1px solid rgba(224, 50, 83, 0.4);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-pink);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      animation: fadeSlideDown 0.6s ease both;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      animation: blink 1.2s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.3; transform: scale(0.75); }
+    }
+
+    /* ─── Keyframe Animations ─── */
+    @keyframes fadeSlideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 480px) {
+      .brand-title { font-size: 2rem; }
+      .logo-img    { width: 150px; height: 150px; }
+      .btn         { padding: 16px 20px; font-size: 0.95rem; }
+      .timer-display { font-size: 1.7rem; }
+      .stats       { gap: 16px; }
+      .stat-value  { font-size: 1.2rem; }
+    }
+  </style>
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1523074746204589');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1523074746204589&ev=PageView&noscript=1"
+  /></noscript>
+  </head>
+<body>
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="stars" id="stars"></div>
+
+  <main class="container" role="main">
+
+    <div class="live-badge" aria-label="Live site">
+      <span class="live-dot"></span>
+      Live Now
+    </div>
+
+    <div class="logo-wrapper" aria-hidden="true">
+      <div class="logo-glow"></div>
+      <img
+        class="logo-img"
+        src="https://i.ibb.co/8nbkt5h9/Whats-App-Image-2026-06-10-at-7-11-17-PM.jpg"
+        alt="arnold Logo"
+        id="site-logo"
+        loading="eager"
+      />
+    </div>
+
+    <div class="brand">
+      <h1 class="brand-title">𝙂𝙊𝘿 𝙓 𝙍𝙀𝘼𝙇 𝙑𝙄𝙋 👑</h1>
+      <p class="brand-tagline">Your Premium Gaming Destination 🎰</p>
+    </div>
+
+    <div class="divider" role="presentation"></div>
+
+    <nav class="buttons" aria-label="Main actions">
+
+      <a
+        id="btn-gift"
+        href="https://slexzone.study/index.php?key=GODxMOD"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+        aria-label="Arnold Gift Code"
+      >
+        <span class="btn-icon">GET PANEL NOW </span>
+      </a>
+
+    </nav>
+
+    <section class="timer-card" id="free-join-timer" aria-live="polite" aria-label="Free join countdown">
+      <span class="timer-label">Time Left For Free Join</span>
+      <span class="timer-display" id="timer-display">00:00</span>
+      <p class="timer-note" id="timer-note">Offer starts counting down as soon as you open the page.</p>
+    </section>
+
+    <div class="stats" aria-label="Platform statistics">
+      <div class="stat-item">
+        <span class="stat-value">50K+</span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">24/7</span>
+        <span class="stat-label">Support</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Secure</span>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 All rights reserved.</p>
+      <p style="margin-top:6px;">
+       Ads Managed By @GODXOWNER17
+      </p>
+    </footer>
+
+  </main>
+
+  <script>
+    // ── Generate twinkling star particles ──
+    (function () {
+      const container = document.getElementById('stars');
+      const count = 60;
+      for (let i = 0; i < count; i++) {
+        const s = document.createElement('div');
+        s.className = 'star';
+        const size = Math.random() * 2.5 + 0.8;
+        s.style.cssText = `
+          width: ${size}px;
+          height: ${size}px;
+          top: ${Math.random() * 100}%;
+          left: ${Math.random() * 100}%;
+          --dur: ${(Math.random() * 3 + 2).toFixed(1)}s;
+          --delay: ${(Math.random() * 4).toFixed(1)}s;
+        `;
+        container.appendChild(s);
+      }
+    })();
+
+    // Free join countdown timer
+    (function () {
+      const timerCard = document.getElementById('free-join-timer');
+      const timerDisplay = document.getElementById('timer-display');
+      const timerNote = document.getElementById('timer-note');
+
+      if (!timerCard || !timerDisplay || !timerNote) {
+        return;
+      }
+
+      let timeLeft = 20;
+
+      function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }
+
+      function renderTimer() {
+        timerDisplay.textContent = formatTime(timeLeft);
+      }
+
+      renderTimer();
+
+      const countdown = setInterval(() => {
+        timeLeft -= 1;
+
+        if (timeLeft <= 0) {
+          timeLeft = 0;
+          renderTimer();
+          timerCard.classList.add('expired');
+          timerNote.textContent = 'Free join time is over. Register now before the next reset.';
+          clearInterval(countdown);
+          return;
+        }
+
+        renderTimer();
+      }, 1000);
+    })();
+
+    // Button ripple effect
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const rect = btn.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.cssText = `
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.25);
+          width: ${size}px;
+          height: ${size}px;
+          left: ${e.clientX - rect.left - size / 2}px;
+          top: ${e.clientY - rect.top - size / 2}px;
+          transform: scale(0);
+          animation: rippleAnim 0.5s ease-out forwards;
+          pointer-events: none;
+        `;
+        btn.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+      });
+    });
+  </script>
+
+  <style>
+    @keyframes rippleAnim {
+      to { transform: scale(2.5); opacity: 0; }
+    }
+  </style>
+
+</body>
+</html>
